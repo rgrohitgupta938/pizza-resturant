@@ -5,10 +5,16 @@
   padding: 0px;
   background-color: black;
   color: white;
+  box-sizing: border-box;
+}
+body {
+  background: black;
 }
 /* <--navbar---> */
 header {
-  margin: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  background: black;
 }
 nav h2 {
   font-family: "Quattrocento", Arial, Helvetica, sans-serif;
@@ -195,7 +201,7 @@ nav div i {
   font-family: "Quattrocento", Arial, Helvetica, sans-serif;
 }
 .gallery-heading hr {
-  width: 15%;
+  width: 100%;
   height: 10px !important;
   border: none;
   color: #b62828;
@@ -246,7 +252,7 @@ nav div i {
 #find {
   display: flex;
   flex-direction: column;
-  margin: 20px 220px;
+  margin: 20px 220px 0px;
   justify-content: center;
 }
 .find-heading h3 {
@@ -282,12 +288,15 @@ nav div i {
   width: 100%;
   object-fit: cover;
 }
+footer {
+  margin: 0px;
+}
 .footer-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 30px auto;
+  padding: 20px;
 }
 @media only screen and (max-width: 600px) {
   /* for small devices */
@@ -395,7 +404,8 @@ nav div i {
   /* <--find section--> */
   #find {
     width: 80%;
-    margin: 20px auto;
+    padding: 20px;
+    margin: 0px auto;
   }
   #find .find-content {
     flex-direction: column;
@@ -469,7 +479,8 @@ nav div i {
   }
   #find {
     width: 80%;
-    margin: 20px auto;
+    padding: 20px;
+    margin: 0px auto;
   }
   #find .find-content {
     flex-direction: column;
